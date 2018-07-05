@@ -10,7 +10,7 @@ class Droid
 		Droid& operator = (Droid const& droid);
 		bool operator == (Droid const& other) const;
 		bool operator != (Droid const& other) const;
-		Droid operator << (size_t& other);
+		Droid& operator<<(size_t& other);
 		~Droid();
 		
 		std::string getId() const;
