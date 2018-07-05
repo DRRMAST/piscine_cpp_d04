@@ -2,7 +2,7 @@
 
 Droid::Droid(std::string serial) : Id(serial), Energy(50) ,Attack(25), Toughness(15), Status(new std::string("Standing by"))
 {	
-	std::cout << "Droid ’" << Id << "’ Activated" << std::endl;
+	std::cout << "Droid '" << Id << "' Activated" << std::endl;
 }
 Droid::Droid(Droid const& droid) : Id(droid.Id), Energy(droid.Energy), Attack(droid.Attack), Toughness(droid.Toughness), Status(new std::string(*(droid.Status)))
 {
