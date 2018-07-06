@@ -116,3 +116,14 @@ void Droid::setStatus(std::string* status)
 		delete this->Status;
 	this->Status = status;
 }
+DroidMemory* Droid::getBattleData() const
+{
+  return this->BattleData;
+}
+
+void Droid::setBattleData(DroidMemory* other)
+{
+  if (BattleData)
+    delete BattleData;
+  this->BattleData = other;
+}

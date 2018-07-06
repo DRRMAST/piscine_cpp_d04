@@ -1,7 +1,7 @@
 #ifndef DROID_HH
 #define DROID_HH
 #include <iostream>
-
+#include "droidmemory.hh"
 class Droid
 {
 	public:
@@ -22,6 +22,8 @@ class Droid
 		void setId(std::string id);
 		void setEnergy(size_t energy);
 		void setStatus(std::string *status);
+		DroidMemory* getBattleData() const;
+		void setBattleData(DroidMemory* other);
 		
 	private:
 		std::string Id;
@@ -29,6 +31,7 @@ class Droid
 		size_t const Attack;
 		size_t const Toughness;
 		std::string * Status;
+		DroidMemory* BattleData;
 };
 
 std::ostream& operator<<(std::ostream& os, Droid const& droid);

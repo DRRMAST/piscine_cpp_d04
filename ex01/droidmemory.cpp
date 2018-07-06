@@ -78,4 +78,3 @@ std::ostream&	operator<<(std::ostream& os, DroidMemory const& droid)
   std::cout << "DroidMemory '" << droid.getFingerPrint() << "', " << droid.getExp();
     return os;
 }
-
