@@ -1,9 +1,10 @@
-#include <cstdlib>
+#include <stdlib.h>
 #include "droidmemory.hh"
-#include "droid.hh"
+
 DroidMemory::DroidMemory() : _fingerPrints(random()), _exp(0)
 {
 }
+
 bool		DroidMemory::operator==(DroidMemory const& other) const
 {
   return ((_exp == other._exp)

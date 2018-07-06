@@ -7,6 +7,7 @@ class	DroidMemory
 {
 public:
   DroidMemory();
+  
   bool		operator==(DroidMemory const& other) const;
   bool		operator!=(DroidMemory const& other) const;
   bool		operator>(DroidMemory const& other) const;
